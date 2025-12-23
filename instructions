@@ -1,0 +1,59 @@
+
+****Setup Backend (Node.js + Express + MongoDB)*****
+
+1.Create a folder backend
+
+2.Open terminal inside backend
+
+3.Run: 
+          npm init -y
+          npm install express mongoose cors body-parser
+4.Create server.js
+          &write  down the code
+5. Run backend
+        node server.js in terminal
+******MongoDB Atlas Cluster******
+1.Go: https://www.mongodb.com/cloud/atlas
+
+2.Sign up / Login
+
+3.Click Build a Cluster → Free Tier (M0) → choose cloud & region → Create Cluster
+
+4.Add DB User: Database Access → Add User
+           Username: xxxx(any)
+
+           Password: xxxx(any)
+
+           Role: Read and Write any DB
+5.Whitelist IP: Network Access → Add IP Address → 0.0.0.0/0 (for testing)
+
+6.Get Connection URI: Clusters → Connect → Connect your application(copy pastr the url & add created username and password)
+
+7.Database & collection auto-create when first document is inserted
+
+/////////////create database in using before used cluster////////////////
+
+              1.Go to your cluster → click Collections
+
+              2.Click Create Database
+
+              3.Enter:
+
+                       Database Name: xxx
+
+                       Collection Name: xxx
+
+                       Click Create
+
+             4.This is optional because method A auto-creates everything.
+
+*****Setup Frontend (React)*********
+1.Create React app
+     npx create-react-app frontend
+     cd frontend
+2.Replace src/App.js
+3.Replace src/App.css
+4.Run frontend
+      npm start
+
+
